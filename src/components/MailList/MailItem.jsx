@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import tags from "../../utilities/tags";
 
 export const tagColors = {
   inbox: "text-green-700 bg-green-100",
@@ -31,5 +33,16 @@ function MailItem({ mail, tag }) {
     </Link>
   );
 }
+
+MailItem.propTypes = {
+  mail: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    subject: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
+    tag: PropTypes.oneOf(tags).isRequired,
+    userId: PropTypes.number,
+  }).isRequired,
+  tag: PropTypes.oneOf(tags).isRequired,
+};
 
 export default MailItem;

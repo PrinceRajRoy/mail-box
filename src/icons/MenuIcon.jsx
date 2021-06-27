@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function MenuIcon({ open, ...props }) {
   if (open) {
@@ -41,5 +42,9 @@ function MenuIcon({ open, ...props }) {
     </svg>
   );
 }
+
+MenuIcon.propTypes = {
+  open: PropTypes.bool.isRequired,
+};
 
 export default MenuIcon;
