@@ -15,7 +15,7 @@ function Sidebar() {
       <div className="bg-gray-800 p-2 text-gray-400 fixed w-screen sm:hidden z-10">
         <MenuIcon
           open={open}
-          className="h-10 w-10 rounded-md sm:hidden hover:text-white hover:bg-gray-700 p-2 focus:ring-white focus:ring-2"
+          className="h-10 w-10 rounded-md sm:hidden hover:text-white hover:bg-gray-700 p-2 focus:ring-white focus:ring-2 cursor-pointer"
           onClick={toggle}
         />
       </div>
