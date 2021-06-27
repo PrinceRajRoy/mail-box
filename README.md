@@ -5,15 +5,15 @@
 - run `npm run build` to create the production build and then `npm run serve` to preview the build locally
 
 ## Following are the route patterns
+```
+/inbox -> (inbox) default
+/draft -> (draft)
+/all -> (all)
+/spam -> (spam)
+/trash -> (trash)
 
-- /inbox -> (inbox) default
-- /draft -> (draft)
-- /all -> (all)
-- /spam -> (spam)
-- /trash -> (trash)
+/inbox/1 -> Email with id = 1 (from inbox category)
+/spam/8 -> Email with id = 8 (from spam category)
 
-- /inbox/1 -> Email with id = 1 (from inbox category)
-- /spam/8 -> Email with id = 8 (from spam category)
-
-- /all?search=sunt -> Search Emails containing `sunt`
-
+/all?search=sunt -> Search emails containing sunt
+```
