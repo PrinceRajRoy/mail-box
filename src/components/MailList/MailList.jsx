@@ -22,13 +22,17 @@ function MailList() {
 
   return (
     <div className="mb-2">
-      {data ? (
+      {data.length ? (
         <>
           {data.map((mail) => (
             <MailItem key={mail.id} mail={mail} tag={tag} />
           ))}
         </>
-      ) : null}
+      ) : (
+        <div className="bg-red-300 text-red-700 font-semibold px-6 py-4 rounded-md p-4 m-3 ">
+          No Results Found
+        </div>
+      )}
     </div>
   );
 }
