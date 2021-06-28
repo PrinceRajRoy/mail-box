@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { selectMailsByQuery } from "../../store/reducers";
-import { useHistory, useLocation, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import MailItem from "./MailItem";
 import useQuery from "../../hooks/useQuery";
 import tags from "../../utilities/tags";
@@ -18,7 +18,7 @@ function MailList() {
     if (!tags.includes(tag)) {
       histoy.push("/inbox");
     }
-  }, []);
+  }, [history, tag]);
 
   return (
     <div className="mb-2">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, HashRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import MenuIcon from "../../icons/MenuIcon";
 import tags from "../../utilities/tags";
 

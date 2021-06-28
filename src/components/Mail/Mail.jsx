@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { selectMailById, selectMailsByTagAndId } from "../../store/reducers";
+import { selectMailsByTagAndId } from "../../store/reducers";
 import { tagColors } from "../MailList/MailItem";
 
 function Mail() {
